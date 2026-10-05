@@ -1,3 +1,6 @@
+`ifndef SUM4_V
+`define SUM4_V
+
 module sum4(output wire [3:0] S, output wire c_out, input wire [3:0] A, input wire [3:0] B, input wire c_in);
   
   wire c_aux_1, c_aux_2, c_aux_3;
@@ -8,3 +11,5 @@ module sum4(output wire [3:0] S, output wire c_out, input wire [3:0] A, input wi
   fa fa4(.c_out(c_out),   .sum(S[3]), .a(A[3]), .b(B[3]), .c_in(c_aux_3));
 
 endmodule
+
+`endif 

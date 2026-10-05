@@ -1,3 +1,6 @@
+`ifndef MUX_4_1_V
+`define MUX_4_1_V
+
 module mux4_1(output reg out, input wire a, b, c, d, input wire [1:0] S);
   always @(a,b,c,d,S) 
   begin
@@ -10,3 +13,5 @@ module mux4_1(output reg out, input wire a, b, c, d, input wire [1:0] S);
     endcase
   end
 endmodule
+
+`endif 
